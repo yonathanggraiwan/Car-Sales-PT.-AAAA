@@ -4,8 +4,9 @@ import pandas as pd
 import pickle
 
 # Load model
-with open('bestmodelwithtuning.pkl', 'rb') as file_1:
-    model = pickle.load(file_1)
+
+import joblib
+model = joblib.load("src/bestmodelwithtuning.pkl")
 
 def run():
     st.title("🚗 Prediksi Harga Pasar Mobil Bekas")
