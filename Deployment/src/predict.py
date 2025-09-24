@@ -6,7 +6,7 @@ import pickle
 # Load model
 
 import joblib
-model = joblib.load("src/bestmodelwithtuning.pkl")
+model = joblib.load("bestmodelwithtuning.pkl")
 
 def run():
     st.title("🚗 Prediksi Harga Pasar Mobil Bekas")
